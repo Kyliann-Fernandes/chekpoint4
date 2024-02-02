@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Moi{% endblock %}
+
+{% block body %}
+    <h1>Moi</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ moi.id }}</td>
+            </tr>
+            <tr>
+                <th>Présentation</th>
+                <td>{{ moi.présentation }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('app_moi_index') }}">back to list</a>
+
+    <a href="{{ path('app_moi_edit', {'id': moi.id}) }}">edit</a>
+
+    {{ include('moi/_delete_form.html.twig') }}
+{% endblock %}

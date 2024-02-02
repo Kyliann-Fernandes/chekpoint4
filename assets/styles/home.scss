@@ -1,0 +1,21 @@
+.body{
+  color:#172026;
+ }
+
+.conteneur-personnalise {
+  max-width: 60%; /* ou une autre valeur selon vos besoins */
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.card1{
+    background-color: #faf8f8be;
+    width: 80%;
+    height: 300px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 2rem;
+    display:flex;
+    vertical-align: top;
+}

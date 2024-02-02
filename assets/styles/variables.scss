@@ -1,0 +1,16 @@
+
+:root {
+    --primary:#027373;
+    --secondary:#172026;
+    --title:"Jost", sans-serif;
+}
+$headings-font-family:"Jost", sans-serif;
+$font-family-base:"Jost", sans-serif;
+
+$primary:#027373;
+$secondary:#eaf1f5;
+
+$theme-colors : (
+"primary" : $primary,
+"secondary" : $secondary,
+)

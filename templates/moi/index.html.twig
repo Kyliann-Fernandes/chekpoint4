@@ -1,0 +1,33 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Moi index{% endblock %}
+
+{% block body %}
+    <h1>Moi index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Presentation</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for moi in mois %}
+            <tr>
+                <td>{{ moi.presentation }}</td>
+                <td>
+                    <a href="{{ path('app_moi_show', {'id': moi.id}) }}">show</a>
+                    <a href="{{ path('app_moi_edit', {'id': moi.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="3">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('app_moi_new') }}">Create new</a>
+{% endblock %}
